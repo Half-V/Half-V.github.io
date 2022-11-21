@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 * {
     margin: 0;
@@ -112,7 +114,7 @@ section {
 
 .description > p {
     font-family: 'Catamaran', sans-serif;
-    font-size: 17xpx;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -265,4 +267,76 @@ section {
 
 .listings:hover .smbtn p::after {
     content: 'See More';
+}
+
+.whychoose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.whychoose > h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 100;
+    font-size: 1.75rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10vh;
+}
+
+.Ydescription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.Ydescription > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 30em;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: double 5px black;
+}
+
+.Ydescription > div > h3 { 
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+}
+
+.Ydescription > div > i {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.Ydescription > div > p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #facehome {
+        display: none;
+    }
+
+    .description {
+        margin-right: 0px;
+    }
+
+    .Ydescription > div {
+        width: 350px;
+    }
 }
