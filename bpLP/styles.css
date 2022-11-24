@@ -250,6 +250,7 @@ section {
     color: white;
     font-family: 'Albert Sans', sans-serif;
     font-weight: 900;
+    text-align: center;
 }
 
 .blackbox > .smbtn {
@@ -286,6 +287,7 @@ section {
     font-weight: 100;
     font-size: 1.75rem;
     letter-spacing: 0.3rem;
+    margin: 0 20px;
     margin-bottom: 10vh;
 }
 
@@ -338,7 +340,42 @@ section {
         margin-right: 0px;
     }
 
+    .listings {
+        width: 40vw;
+        height: 48vw;
+        margin: 10px 15px;
+    }
+
+    .listings > img {
+        max-width: 88%;
+        max-height: 88%;
+    }
+
+    .listings:hover > img {
+        max-width: 70%;
+        max-height: 70%;
+        transition: all 200ms;
+    }
+
+    .listings:hover > .blackbox > h4 {
+        font-size: 0.85rem;
+    }
+
     .Ydescription > div {
-        width: 350px;
+        width: 43vw;
+        height: 43vh;
+        margin: 10px 10px;
+    }
+
+    .Ydescription > div > p { 
+        font-size: 0.80rem;
+    }
+
+    .Ydescription > div > .topper {
+        font-size: 1.25rem;
+    }
+
+    .Ydescription > div > i {
+        margin-bottom: 10px;
     }
 }
